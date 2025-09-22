@@ -1,0 +1,94 @@
+/* Profile Container */
+.profileContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profileHeader {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    margin-bottom: 10px;
+}
+
+.profileHeader h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.profileHeader p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Form Section */
+.formSection {
+    margin-top: 20px;
+}
+
+.formLabel {
+    font-weight: 600;
+    color: #333;
+}
+
+.formControl {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.formControl:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Buttons */
+.btnPrimary {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btnPrimary:hover {
+    background: #0056b3;
+}
+
+.btnSecondary {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btnSecondary:hover {
+    background: #545b62;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profileContainer {
+        padding: 20px;
+    }
+}

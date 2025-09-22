@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/RevUpBids/css/logout.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome to the Admin Dashboard</h2>
+
+        <!-- Logout Button -->
+        <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+
+    <script>
+        // Logout Logic
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Clear session data (optional)
+            localStorage.removeItem('userSession');
+            sessionStorage.removeItem('userSession');
+            
+            // Optionally, you can clear cookies if you're using them for session tracking.
+
+            // Redirect to login page
+            window.location.href = '/buyer-panel/html/login.html'; // Replace with your login page URL
+        });
+    </script>
+</body>
+</html>

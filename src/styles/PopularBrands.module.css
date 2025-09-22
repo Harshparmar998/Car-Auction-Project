@@ -1,0 +1,83 @@
+.popularBrandsSection {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Scrollable Slider */
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Slider Wrapper */
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: slide 25s linear infinite;
+}
+
+/* Brand Logo */
+.brandLogo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.brandLogo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Sliding Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves by half for infinite loop */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .slider {
+    gap: 2rem;
+  }
+
+  .brandLogo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    gap: 1.5rem;
+  }
+
+  .brandLogo {
+    width: 80px;
+    height: 80px;
+  }
+}

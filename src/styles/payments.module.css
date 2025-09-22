@@ -1,0 +1,148 @@
+/* Container styling */
+.container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Page heading */
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Table styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Car image styling */
+  .carImage {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Status badge */
+  .bidStatus {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  
+  .bidStatus.approved {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .bidStatus.pending {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .bidStatus.withdrawn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Payment button */
+  .payNowBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .payNowBtn:hover {
+    background-color: #218838;
+  }
+  
+  /* Withdraw button */
+  .withdrawBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .withdrawBtn:hover {
+    background-color: #c82333;
+  }
+  
+  /* No bids message */
+  .noBids {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 20px;
+    font-style: italic;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pagination .page-item {
+    margin: 0 5px;
+  }
+  
+  .pagination .page-link {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination .active .page-link {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  

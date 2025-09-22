@@ -1,0 +1,137 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0F1C36;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbarBrand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbarBrand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbarBrand a:hover {
+  color: #F6B93B; /* Yellow-Orange Hover */
+}
+
+/* Search Bar Styling */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchInput {
+  width: 250px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #0F1C36;
+  border-radius: 5px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #FF3B30; /* Red focus */
+  box-shadow: 0 0 5px rgba(246, 185, 59, 0.5); /* Yellow focus */
+}
+
+.searchButton {
+  background-color: #FF3B30;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #F6B93B;
+}
+
+/* Action Buttons */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginButton,
+.signupButton,
+.actionButton,
+.moreButton {
+  background-color: #FF3B30;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover,
+.signupButton:hover,
+.actionButton:hover,
+.moreButton:hover {
+  background-color: #F6B93B;
+}
+
+/* Sidebar Styling */
+
+.moreButton:hover + .sidebar,
+.sidebar:hover {
+  display: block; /* Display when hovering over the More button or sidebar */
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+  position: absolute;
+  top: 70px; /* Adjusted to align with the navbar */
+  right: 0;
+  background-color: #0F1C36;
+  
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  z-index: 1000; /* Ensure it displays above the carousel */
+}
+
+.sidebarItem {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-radius: 3px;
+
+}
+
+.sidebarItem:hover {
+  background-color: #FFFFFF;
+  color: #0F1C36;
+}
+
+
+/* Greeting text */
+.greeting {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}

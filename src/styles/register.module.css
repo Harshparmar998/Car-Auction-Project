@@ -1,0 +1,135 @@
+/* Center the registration box */
+.registrationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Form Box */
+.registrationBox {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0F1C36;
+    margin-bottom: 20px;
+}
+
+.subHeading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0F1C36;
+    margin-bottom: 15px;
+}
+
+/* Form Controls */
+.inputGroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.inputLabel {
+    font-weight: 500;
+    color: #0F1C36;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formControl {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #0F1C36;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formControl:focus {
+    border-color: #FF3B30;
+    box-shadow: 0 0 5px rgba(255, 59, 48, 0.5);
+}
+
+/* Buttons */
+.btnGroup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.btnPrimary {
+    background-color: #FF3B30;
+    color: white;
+}
+
+.btnPrimary:hover {
+    background-color: #0F1C36;
+}
+
+.btnOutline {
+    border: 2px solid #0F1C36;
+    color: #0F1C36;
+    background: transparent;
+}
+
+.btnOutline:hover {
+    background-color: #0F1C36;
+    color: white;
+}
+
+/* Registration Form */
+.registrationForm {
+    margin-top: 20px;
+}
+
+.btnPrimary {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btnPrimary:hover {
+    background-color: #0F1C36;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .registrationBox {
+        padding: 30px;
+    }
+
+    .btnGroup {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,145 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 15px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+}
+
+.sidebar .logo-wrapper {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .nav-link {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #007bff;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.form-check {
+  margin-bottom: 15px;
+}
+
+.report-section {
+  margin-top: 30px;
+}
+
+.report-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-section th, .report-section td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.report-section th {
+  background-color: #f4f4f4;
+}
+
+.report-section tr:hover {
+  background-color: #f1f1f1;
+}
+
+.report-section h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Modal styling */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .form-label {
+  font-weight: bold;
+}
+
+.modal input[type="text"], .modal input[type="number"], .modal input[type="date"] {
+  width: 100%;
+}
+
+.modal button {
+  margin-top: 20px;
+}

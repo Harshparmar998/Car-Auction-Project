@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Management</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/RevUpBids/css/report.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3 class="logo-wrapper">Admin Panel</h3>
+    <nav>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="seller.html" class="nav-link">Sellers</a>
+      <a href="buyer.html" class="nav-link">Buyers</a>
+      <a href="auction.html" class="nav-link">Auctions</a>
+      <a href="bid.html" class="nav-link">Bids</a>
+      <a href="report.html" class="nav-link active">Reports</a>
+      <a href="payment.html" class="nav-link">Payments</a>
+      <a href="logout.html" class="nav-link">Logout</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header Section -->
+    <header>
+      <h2 style="color: white;">Report Management</h2>
+    </header>
+
+    <!-- Report Type Selection -->
+    <div class="actions">
+      <h4>Select Report Type:</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="reportType" id="salesReport" value="sales" checked>
+        <label class="form-check-label" for="salesReport">Sales Report</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="reportType" id="bidsReport" value="bids">
+        <label class="form-check-label" for="bidsReport">Bids Report</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="reportType" id="auctionsReport" value="auctions">
+        <label class="form-check-label" for="auctionsReport">Auctions Report</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="reportType" id="paymentsReport" value="payments">
+        <label class="form-check-label" for="paymentsReport">Payment Report</label>
+      </div>
+    </div>
+
+    <!-- Generate Button -->
+    <div class="actions">
+      <button id="generateReport" class="btn btn-primary"><i class="fas fa-file-alt"></i> Generate Report</button>
+    </div>
+
+    <!-- Report Section (Dynamically loaded content based on report selection) -->
+    <div id="reportSection" class="report-section">
+      <!-- Report content will be dynamically generated here -->
+    </div>
+  </div>
+
+  <!-- Modal for Sales Report Form -->
+  <div class="modal" id="salesReportModal">
+    <div class="modal-content">
+      <span class="close" id="closeSalesModal">&times;</span>
+      <h3>Generate Sales Report</h3>
+      <form id="salesReportForm">
+        <div class="mb-3">
+          <label for="salesProductName" class="form-label">Product Name</label>
+          <input type="text" class="form-control" id="salesProductName" required>
+        </div>
+        <div class="mb-3">
+          <label for="salesAmount" class="form-label">Amount</label>
+          <input type="number" class="form-control" id="salesAmount" required>
+        </div>
+        <div class="mb-3">
+          <label for="salesDate" class="form-label">Sales Date</label>
+          <input type="date" class="form-control" id="salesDate" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Sales Report</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for Bids Report Form -->
+  <div class="modal" id="bidsReportModal">
+    <div class="modal-content">
+      <span class="close" id="closeBidsModal">&times;</span>
+      <h3>Generate Bids Report</h3>
+      <form id="bidsReportForm">
+        <div class="mb-3">
+          <label for="bidderName" class="form-label">Bidder Name</label>
+          <input type="text" class="form-control" id="bidderName" required>
+        </div>
+        <div class="mb-3">
+          <label for="auctionId" class="form-label">Auction ID</label>
+          <input type="number" class="form-control" id="auctionId" required>
+        </div>
+        <div class="mb-3">
+          <label for="bidAmount" class="form-label">Bid Amount</label>
+          <input type="number" class="form-control" id="bidAmount" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Bids Report</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for Auctions Report Form -->
+  <div class="modal" id="auctionsReportModal">
+    <div class="modal-content">
+      <span class="close" id="closeAuctionsModal">&times;</span>
+      <h3>Generate Auctions Report</h3>
+      <form id="auctionsReportForm">
+        <div class="mb-3">
+          <label for="auctionName" class="form-label">Auction Name</label>
+          <input type="text" class="form-control" id="auctionName" required>
+        </div>
+        <div class="mb-3">
+          <label for="auctionStatus" class="form-label">Auction Status</label>
+          <select class="form-control" id="auctionStatus" required>
+            <option value="Pending">Pending</option>
+            <option value="Ongoing">Ongoing</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Auctions Report</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for Payment Report Form -->
+  <div class="modal" id="paymentsReportModal">
+    <div class="modal-content">
+      <span class="close" id="closePaymentsModal">&times;</span>
+      <h3>Generate Payment Report</h3>
+      <form id="paymentsReportForm">
+        <div class="mb-3">
+          <label for="paymentStatus" class="form-label">Payment Status</label>
+          <select class="form-control" id="paymentStatus" required>
+            <option value="Completed">Completed</option>
+            <option value="Pending">Pending</option>
+            <option value="Failed">Failed</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="paymentDate" class="form-label">Payment Date</label>
+          <input type="date" class="form-control" id="paymentDate" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Payment Report</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/RevUpBids/script/report.js"></script>
+</body>
+</html>

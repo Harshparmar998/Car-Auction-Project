@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Management</title>
+  <link rel="stylesheet" href="/RevUpBids/css/payment.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h3 class="logo-wrapper">Admin Panel</h3>
+    <nav>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="seller.html" class="nav-link">Sellers</a>
+      <a href="buyer.html" class="nav-link">Buyers</a>
+      <a href="auction.html" class="nav-link">Auctions</a>
+      <a href="bid.html" class="nav-link">Bids</a>
+      <a href="report.html" class="nav-link">Reports</a>
+      <a href="payment.html" class="nav-link active">Payments</a>
+      <a href="logout.html" class="nav-link">Logout</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2 style="color: white;">Payment Management</h2>
+    </header>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Bid ID</th>
+          <th>Auction ID</th>
+          <th>Buyer ID</th>
+          <th>Buyer Name</th>
+          <th>Total Amount</th>
+          <th>Token Amount</th>
+          <th>Payment Deadline</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="paymentList">
+        <!-- Payments will be dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/RevUpBids/script/payment.js"></script>
+</body>
+</html>

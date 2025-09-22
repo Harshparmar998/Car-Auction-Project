@@ -1,0 +1,191 @@
+/* ✅ Payment Container Design */
+.container {
+    max-width: 550px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* ✅ Smooth Hover Effect on Card */
+.container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* ✅ Page Title */
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    color: #0F1C36;
+    margin-bottom: 20px;
+}
+
+/* ✅ Payment Card Container */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Form Group (Space Between Fields) */
+.formGroup {
+    margin-bottom: 15px;
+}
+
+/* ✅ Label Style */
+.formGroup label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* ✅ Input Field Design */
+.formControl {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0F1C36;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: all 0.3s;
+    outline: none;
+    background-color: #f8f9fa;
+}
+
+/* ✅ Placeholder Design */
+.formControl::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* ✅ Input Focus Effect */
+.formControl:focus {
+    border-color: #FF3B30;
+    box-shadow: 0 0 12px rgba(255, 59, 48, 0.3);
+}
+
+/* ✅ Row Design for Expiry Date & CVV */
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+/* ✅ Column Design */
+.col {
+    flex: 1;
+}
+
+/* ✅ Button Design */
+.btnPrimary {
+    background-color: #FF3B30;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ✅ Button Hover Effect */
+.btnPrimary:hover {
+    background-color: #0F1C36;
+    transform: scale(1.05);
+}
+
+/* ✅ Success Message */
+.successMessage {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 15px;
+    animation: fadeIn 0.5s;
+    border: 1px solid #c3e6cb;
+}
+
+/* ✅ Error Message */
+.errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid #f5c6cb;
+    animation: fadeIn 0.5s;
+}
+
+/* ✅ Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ Amount Input Design */
+.formControl[type="text"]:nth-child(5) {
+    background-color: #f3f3f3;
+}
+
+/* ✅ Amount Placeholder */
+.formControl[type="text"]:nth-child(5)::placeholder {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ✅ Button Loading Animation */
+.btnPrimary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .formControl {
+        padding: 10px;
+    }
+
+    .btnPrimary {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* ✅ Link Design */
+.link {
+    color: #0F1C36;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ✅ Link Hover */
+.link:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Card Hover Effect */
+.container:hover {
+    transform: scale(1.03);
+    transition: all 0.3s
+}

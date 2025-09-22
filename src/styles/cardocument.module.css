@@ -1,0 +1,89 @@
+/* cardocument.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .formContainer {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .formContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .textCenter {
+    text-align: center;
+    color: #0F1C36; /* Dark blue */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .mb3 {
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #0F1C36; /* Dark blue */
+  }
+  
+  .formControl {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  .formControl:focus {
+    border-color: #FF3B30; /* Red */
+    box-shadow: 0 0 5px rgba(255, 59, 48, 0.3);
+  }
+  
+  .btnPrimary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FF3B30; /* Red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #F6B93B; /* Yellow-orange */
+    transform: scale(1.05);
+  }
+  
+  .preview-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }

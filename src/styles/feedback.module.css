@@ -1,0 +1,124 @@
+/* Feedback Form Container */
+.feedbackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Feedback Box Card */
+.feedbackBox {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect on Card */
+.feedbackBox:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+.feedbackBox h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0F1C36;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ✅ Add Space Between Input Fields */
+.formControl {
+    border-radius: 30px;
+    border: 1px solid #0F1C36;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;   /* ✅ This adds space between input fields */
+}
+
+/* ✅ Add Space Between Textarea and Button */
+textarea.formControl {
+    resize: none;
+    border-radius: 30px;
+    padding: 12px;
+    margin-bottom: 20px;  /* ✅ Space before submit button */
+}
+
+/* ✅ Add Space Between Button and Link */
+.btnPrimary {
+    background-color: #FF3B30;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;  /* ✅ Space before "Go Back to Dashboard" */
+}
+
+/* Focus Style on Input Field */
+.formControl:focus {
+    box-shadow: none;
+    border-color: #0F1C36;
+}
+
+/* ✅ Hover Effect on Button */
+.btnPrimary:hover {
+    background-color: #0F1C36;
+    color: #fff;
+}
+
+/* Success Message Style */
+.alertSuccess {
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-top: 10px;
+    animation: fadeIn 0.5s;
+}
+
+/* Success Message Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ Link Style */
+.link {
+    color: #0F1C36;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ✅ Hover Effect on Link */
+.link:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Space Between Form Elements */
+.formGroup {
+    margin-bottom: 15px;
+}
+
+/* ✅ Add Smooth Shadow on Hover */
+.feedbackBox:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

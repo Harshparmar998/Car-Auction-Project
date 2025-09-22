@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/RevUpBids/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <!-- Login Form -->
+            <form id="loginForm" method="POST">
+                <div class="textbox">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <div class="back-to-login">
+                <a href="/forget_password.html">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Function to handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get values from the form
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple login logic (for testing)
+            if (username === 'admin' && password === 'admin123') {
+                // If login is successful
+                alert('Login Successful!');
+                // Redirect to the dashboard or another page
+                window.location.href = 'dashboard.html';
+            } else {
+                // If login fails
+                alert('Invalid Username or Password');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* Main form container */
+.container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Form styling */
+.formContainer {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Input fields */
+.inputField {
+    width: 100%;
+}
+
+.inputField label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputField input,
+.inputField select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect */
+.inputField input:focus,
+.inputField select:focus {
+    border-color: #0F1C36;
+    box-shadow: 0px 0px 5px rgba(15, 28, 54, 0.5);
+}
+
+/* Submit button styling */
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #FF3B30;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover and focus effect */
+.submitBtn:hover,
+.submitBtn:focus {
+    background-color: #162A4D;
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+
+    .submitBtn {
+        font-size: 14px;
+    }
+}

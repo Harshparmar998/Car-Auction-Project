@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction Management</title>
+  <link rel="stylesheet" href="/RevUpBids/css/auction.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h3 class="logo-wrapper">Admin Panel</h3>
+    <nav>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="seller.html" class="nav-link">Sellers</a>
+      <a href="buyer.html" class="nav-link">Buyers</a>
+      <a href="auction.html" class="nav-link active">Auctions</a>
+      <a href="bid.html" class="nav-link">Bids</a>
+      <a href="report.html" class="nav-link">Report</a>
+      <a href="payment.html" class="nav-link">Payments</a>
+      <a href="logout.html" class="nav-link">Logout</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2 style="color: white;">Auction Management</h2>
+    </header>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Minimun Price</th>
+          <th>Seller Name</th>
+          <th>Car Status</th>
+          <th>Image</th> 
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="pendingauctionList">
+        <!-- Sellers will be dynamically populated here -->
+      </tbody>
+    </table>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Auction Name</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Car Image</th>
+        </tr>
+      </thead>
+      <tbody id="auctionList">
+        <!-- Auctions will be dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Edit Auction Modal -->
+  <div id="auctionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle">Edit Auction</h3>
+      <form id="auctionForm">
+        <label for="name">Auction Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="Pending">Pending</option>
+          <option value="Ongoing">Ongoing</option>
+          <option value="Completed">Completed</option>
+          <option value="Cancelled">Cancelled</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/RevUpBids/script/auction.js"></script>
+</body>
+</html>
