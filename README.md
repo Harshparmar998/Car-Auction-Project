@@ -1,6 +1,4 @@
-# Seller Management
-
-This project is a part of the RevUpBids platform, providing backend services for seller management.
+🚗 RevUpBids is a car auction platform where buyers place bids, win auctions, pay a token amount, and get email confirmations. Sellers list cars, view bids, approve winners, and receive payments. Admins approve sellers, manage auctions, and ensure secure, transparent transactions.
 
 ## Getting Started
 
